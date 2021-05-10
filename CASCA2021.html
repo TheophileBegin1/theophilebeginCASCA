@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<!-- Based on a poster template from https://github.com/cpitclaudel/academic-poster-template -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Discovery of extended emission in the galaxy cluster MS 0735.6+7421</title>
+    <link rel="stylesheet" href="poster.css">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1">
+
+    <script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+
+    <style type="text/css">
+	  html { font-size: 1.15rem }
+	</style>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <main class="bg-secondary">
+    <div style="background-image: url('galaxies.jpg');">
+      <div class="container-fluid bg-dark">
+        <div class="row">
+            <div class="col-md-3">
+              <figure class="figure">
+                <img src="X-TRA_Negatif.png" class="figure-img img-fluid rounded w-25 mt-2" alt="...">
+              </figure>
+            </div>
+            <div class="col-6 text-center mt-2 text-warning">
+              <h2>Discovery of extended emission in the galaxy cluster MS 0735.6+7421</h2>
+              <h5>T. Bégin, J. Hlavacek-Larrondo, C. Rhea, B. McNamara, M. Gendron-Marsollais, R. J. van Weeren </h5>
+            </div>
+            <div class="col-3">
+              <figure class="figure">
+                <img src="logo-UdeM-blanc.png" class="figure-img img-fluid rounded w-50 float-right mt-2" alt="...">
+              </figure>
+            </div>
+        </div>
+      </div>
+
+    <div class="row mt-2">
+      <div class="col-md-4">
+        <div class="card ml-2">
+          <h2 class="card-header text-center bg-dark text-warning">
+
+            What's crucial about the galaxy cluster MS 0735.6+7421?
+          </h2>
+          <div class="card-body bg-light">
+            <h4 class="card-title text-info">Radio mini-halos</h4>
+            <p class="card-text">
+              <ul>
+                <li>A mini-halo is a diffuse radio emission structure mostly found at the center of massive cool-core clusters. </li>
+                <li>It has a typical scale of 100-500 kpc. </li>
+                <li>These structures are believed to be the result of in-situ (re-)acceleration of electron populations.  </li>
+                <li>The main hypothesis for the (re-)acceleration of electron populations is turbulence induced by the sloshing movement of the intracluster medium (ICM). </li>
+                <li>However, recent observational work suggests that the (re-)acceleration mechanism might be linked to the central AGN and thus, more radio observations are required in order to investigate this hypothesis. </li>
+
+              </ul>
+            </p>
+            <hr>
+            <h4 class="card-title text-info">MS 0735.6+7421</h4>
+            <p class="card-text">
+              <ul>
+                <li>MS 0735.6+7421 is a massive cool-core cluster and so, it is a likely cluster candidate to host a mini-halo.</li>
+                <li>Moreover, it exhibits one of the most powerful central AGN known and is thus a key limiting case to investigate the hypothesis of a (re-)acceleration of electrons reponsible for the mini-halo emission by the central AGN.</li>
+
+              </ul>
+           </p>
+           <hr>
+           <h4 class="card-title text-info">MS 0735.6+7421 key features</h4>
+           <p class="card-text">
+             <ul>
+               <li>Redshift: z = 0.216 (corresponding to 3.5 kpc per arcsec).</li>
+               <li>Mass: M<sub>500</sub> = (4.5 ± 1.2) x 10<sup>14</sup> M&odot;. </li>
+               <li>Central entropy: K<sub>0</sub> = (12.6 ± 0.6) keV cm<sup>2</sup>. </li>
+               <li>Mean power of the jets: P<sub>jets</sub> = (1.7 ± 0.6) x 10<sup>46</sup> erg/s. </li>
+             </ul>
+          </p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <h2 class="card-header text-center bg-dark text-warning">
+            Our results
+          </h2>
+
+
+
+          <div class="card-body bg-light">
+            <div id="accordion">
+              <h3 class="text-center font-weight-bold">Click on the header to learn more!</h3>
+
+              <div class="card">
+                <div class="card-header bg-dark" id="training">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link text-center" data-toggle="collapse" data-target="#collapsetraining" aria-expanded="true" aria-controls="collapsetraining">
+                      <h3 class="text-center font-weight-bold text-light">High spatial resolution</h3>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapsetraining" class="collapse" aria-labelledby="training" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                    <ul>
+                    <li>The detailed morphology of the relativistic jets were image with the Very Large Array (VLA) in P-band (230-470 MHz) A configuration and published in McNamara et al. 2009. </li>
+                    </ul>
+                    </p>
+
+                    <figure>
+                      <img class="w-100" src="PbandMc.JPG" />
+                      <figcaption>Fig. 1 - MS 0735.6+7421 jets as imaged by the VLA P-band (230-470 MHz) A configuration. The largest green contours encompasses emission above 3 times the ambient rms noise (&sigma;<sub>rms</sub> = 1.3 mJy/beam). B. R. McNamara (McNamara et al. 2009). </a>.
+                      </figcaption>
+                    </figure>
+                    <p>
+                    <ul>
+                    <li> No diffuse extended radio emission was discovered as part of this McNamara et al. 2009 paper. This is not unexpected given the configuration that was used (VLA A configuration observations benefit from higher spatial resolution, but lower sensitivity to radio flux density).</li>
+                    <li> Imaging of the central part of the cluster with higher sensitivity to flux density could allow to detect a diffuse emission (see the box titled ''MS 0735.6+7421'').</li>
+                    </ul>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-header bg-dark" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link text-center" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                       <h3 class="text-center font-weight-bold text-light">Our new radio imaging</h3>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                    <ul>
+                    <li> We produced two new JVLA radio images of MS 0735.6+7421 in L-band (1-2 GHz) C configuration (see fig. 2) and in P-band (230-470 MHz) C configuration (see fig. 3). The key advantage of these images is that they are more sensitive to the faint emission (thus allowing to detect emission that is fainter and more diffuse).</li>
+                    </ul>
+                    </p>
+                    <figure>
+                      <img class="w-100" src="Pbandnew.JPG" />
+                      <figcaption>Fig. 2 - 230-470 MHz (P-band) JVLA C configuration image. The noise level in the vicinity of the cluster is &sigma;<sub>rms</sub> = 0.50 mJy/beam, the peak value is 314 mJy/beam and the beam size is 59'' x 75''. Contour levels are drawn at [1, 9, 262]x3&sigma;<sub>rms</sub> (3 levels in total). </figcaption>
+                    </figure>
+
+                    <figure>
+                      <img class="w-100" src="Lbandnew.JPG" />
+                      <figcaption>Fig. 3 -  1-2 GHz (L-band) JVLA C configuration image. The noise level in the vicinity of the cluster is &sigma;<sub>rms</sub> = 0.017 mJy/beam, the peak value is 7.92 mJy/beam and the beam size is 13.5'' x 19.2''. Contour levels are drawn at [1, 6, 155]x3&sigma;<sub>rms</sub> (3 levels in total).</figcaption>
+                    </figure>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-header bg-dark" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link text-center" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                       <h3 class="text-center font-weight-bold text-light">Detection of new flux</h3>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>
+                    <ul>
+                    <li> The L-band (1-2 GHz) image shows extended diffuse emission larger than the previously detected jets. However, it is not yet clear if this new diffuse emission is attributable to the jets or to a more extended diffuse emission. We note that the extended emission is on the order of 500 kpc which is typical for a mini-halo structures.</li>
+                    <li> By comparing the total flux density of the old P-band (230-470 MHz) A configuration image (S<sub>Aconfig,350MHz</sub> = 0.60±0.05 Jy) with the new P-band (230-470 MHz) C configuration image (S<sub>Cconfig,350MHz</sub> = 0.70±0.06 Jy). By scaling these flux to 1.4 GHz and comparing the associated radio power, we find an increase in radio power of P<sub>excess,1.4GHz</sub> = (5±3)x10<sup>24</sup> W/Hz, which is consistent with typical mini-halos. </li>
+                    </ul>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="card">
+                <div class="card-header bg-dark" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link text-center" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                       <h3 class="text-center font-weight-bold text-light">Spectral index map</h3>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    <figure>
+                      <img class="w-100" src="SIM.jpg" />
+                      <figcaption>Fig. 4 - Spectral index map of the radio emission of MS 0735.6+7421 and its surroundings between L-band (1-2 GHz) and P-band (230-470 MHz) and where the spectral index is defined as S ∝ v<sup>-&alpha;</sup>. The colored regions are the regions where the flux density was significant (3 times the average rms noise in the vicinity of the cluster) in both the L-band and the P-band images.  Consequently, the white regions correspond to regions where the flux density was not significant enough in at least one of the two bands and could thus not lead to a significant value of spectral index. </figcaption>
+                    </figure>
+                    <p>
+                      <ul>
+                      <li> We see a clear spectral index gradient from a value of approximately 2 in the core to a value of 4 in the outskirt.  </li>
+                      <li> The central value of 2 is very steep for a typical AGN spectral index. We conclude that this is due to the superposition of jet emission with the central core emission. </li>
+                      <li> The outskirt value is also very steep with a value of 4 suggesting spectral ageing of the electron population responsible for the emission. </li>
+                      </ul>
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <h2 class="card-header text-center bg-dark text-warning">
+            Conclusions
+          </h2>
+          <div class="card-body bg-light">
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header bg-dark" id="headingSeven">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link text-center" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                       <h3 class="text-center font-weight-bold text-light">Main Conclusions</h3>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseSeven" class="collapse show" aria-labelledby="headingSeven" data-parent="#accordion">
+                  <div class="card-body">
+                  <p>
+                      <ul>
+                        <li>We discovered a diffuse radio emission with a radio power that is consistent with typical radio power for mini-halos. </li>
+                        <li>The spectral index maps is typical with a ageing population of electrons. </li>
+                      </ul>
+                  </p>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="card">
+                <div class="card-header bg-dark" id="headingEleven">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link text-center" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseEleven">
+                       <h3 class="text-center font-weight-bold text-light">Contact Me</h3>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseEleven" class="collapse show" aria-labelledby="headingEleven" data-parent="#accordion">
+                  <div class="card-body">
+
+                    <p>You can email me at <a href="mailto:begin@astro.umontreal.ca">begin@astro.umontreal.ca</a>!</p>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </main>
+
+  </body>
+</html>
